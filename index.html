@@ -15,6 +15,7 @@
   <link href="css/touchTouch.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="images/nu/pizza_nu_logo_favicon.png"/>
 
   <script src="js/jquery.js"></script>
@@ -34,6 +35,8 @@
   <script src="js/touchTouch.jquery.js"></script>
   <script src="js/cform.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7wjV1CwNnsfTSK8eZODCG6C4bXE4wA2Q&libraries=&v=weekly"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -89,7 +92,6 @@
             <a href="#home" class="logo scroll-to" style="display: inline-block;">
               <img src="images/nu/pizza_nu_logo_black5.png" alt="" class="img-responsive">
             </a>
-
             <div class="social_wrapper">
               <ul class="social clearfix">
                 <li>
@@ -117,12 +119,11 @@
 
   <div id="top00">
     <img src="/images/nu/logo_wood3.jpg" alt="">
-
     <div id="top1" style="display: inline-block;">
       <div class="top2_wrapper" id="top2">
         <div class="">
           <div class="top2 clearfix">
-            <div class="navbar navbar_ navbar-default">
+            <div class="navbar navbar_ navbar-default"> 
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -131,7 +132,18 @@
               </button>
               <div class="navbar-collapse navbar-collapse_ collapse">
                 <ul class="nav navbar-nav sf-menu clearfix">
-                  <li class="sub-menu sub-menu-1"><a href="#home">Cjenik</a></li>
+                  <li class="sub-menu sub-menu-1">
+                    <a href="#home" id="cjenik">Cjenik</a>                    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img class="modal-content" id="img01" src="../images/Cjenik.jpg">
+                      <!-- Modal Caption (Image Text) -->
+                      <!-- <div id="caption">Cjenik</div> -->
+                    </div>
+                  </li>
                   <li><a href="#">Dostava</a></li>
                   <li><a href="#">Kontakt</a></li>
                   <li id="gallery-el"><a href="#">Galerija</a></li>
@@ -142,355 +154,14 @@
         </div>
       </div>
     </div>
+
   </div>
 
-  <div id="about" class="section">
-    <img class='newparallax mushroom1' alt='' src='images/mushroom1.png' data-speed='1000' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-    <img class='newparallax mushroom2' alt='' src='images/mushroom2.png' data-speed='1100' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-    <img class='newparallax flour' alt='' src='images/flour.png' data-speed='1200' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-  </div>
-
-  <div id="pizza" class="section" style="display: none;">
-    <div class="container">
-      <div id="slider_wrapper">
-        <div class="container">
-          <div id="slider">
-            <img src="images/slider_bg.png" alt="" class="slider_bg">
-            <div id="slider_inner">
-              <div id="flexslider">
-                <ul class="slides clearfix">
-
-                  <li class="nav1">
-                    <img src="images/pizze/Pizza sa gljivama3.jpg" alt="">
-                  </li>
-                  <li class="nav1">
-                    <img src="images/pizze/pizza3.jpg" alt="">
-                  </li>
-                  <li class="nav1">
-                    <img src="images/pizze/pizza4.jpg" alt="">
-                  </li>
-                </ul>
-
-                <div class="flex-slider-gradient"></div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h2>Naša pizza</h2>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="pizza1_wrapper">
-            <img src="images/pizze/pizza_on_board.png" alt="" class="pizza1">
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-
-          <p>
-            <b class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. </b>
-          </p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-
-          <br>
-
-          <div class="row">
-            <div class="col-sm-6">
-              <ul class="ul1">
-                <li><a href="#">Mozzarella</a></li>
-                <li><a href="#">Goat cheese</a></li>
-                <li><a href="#">Canadian cheddar</a></li>
-                <li><a href="#">Formaggio blend</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6">
-              <ul class="ul1">
-                <li><a href="#">Feta cheese</a></li>
-                <li><a href="#">Cheddar cheese</a></li>
-                <li><a href="#">Blue cheese</a></li>
-                <li><a href="#">Pramigiano cheese</a></li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="gallery" class="section">
-    <img class='newparallax bree' alt='' src='images/bree.png' data-speed='1700' data-sizemode='nostretch'
-         data-position='left'/>
+ <div id="contacts" class="section">
+    
 
 
-    <div class="container">
-
-      <h2 class="gallery-title">Galerija</h2>
-
-      <div id="gallery_inner">
-        <div class="">
-          <div class="carousel-box">
-            <div class="inner">
-              <div class="carousel main">
-                <ul>
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0539 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0539 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0458 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0458 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/_DSC0540_(Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0540_(Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0466 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0466 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0613 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0613 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0467 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0467 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0645 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0645 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0469 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0469 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0646 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0646 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0470 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0470 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0645 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0649 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0616 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0616 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0645 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/_DSC0652 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/_DSC0618 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/_DSC0618 (Medium).jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/pizze/_DSC0645 (Medium).jpg" class="clearfix">
-                          <figure>
-                            <img src="images/pizze/thumbs/Pizza1.jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="thumb1">
-                      <div class="thumbnail clearfix">
-                        <a href="images/ambient/IMG_0093.JPG" class="clearfix">
-                          <figure>
-                            <img src="images/ambient/thumbs/IMG_0093.jpg" alt="" class="img-responsive">
-                            <span class="zoom_left"></span>
-                            <span class="zoom_text">ZOOM</span>
-                            <span class="zoom_right"></span>
-                          </figure>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="gallery_controls">
-          <a class="gallery_prev" href="#"></a>
-          <div class="gallery_pagination"></div>
-          <a class="gallery_next" href="#"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contacts" class="section">
-    <img class='newparallax garlic' alt='' src='images/garlic.png' data-speed='1400' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-    <img class='newparallax garlic2' alt='' src='images/garlic2.png' data-speed='1850' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-    <img class='newparallax garlic3' alt='' src='images/garlic3.png' data-speed='1700' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-    <img class='newparallax cutter' alt='' src='images/cutter.png' data-speed='2200' data-sizemode='nostretch'
-         data-position='left' style="display: none;"/>
-    <!--<img class='newparallax cheese' alt='' src='images/cheese.png' data-speed='1550' data-sizemode='nostretch'
-         data-position='left'/>-->
-
-
-    <div class="container">
+    <div class="container-2">
       <div class="row">
         <div class="col-sm-6">
 
@@ -537,7 +208,7 @@
 
           <div id="note"></div>
           <div id="fields">
-            <form id="ajax-contact-form" class="form-horizontal" action="javascript:alert('success!');">
+            <form id="ajax-contact-form" method="post" class="form-horizontal" action="contact.php">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
@@ -569,7 +240,7 @@
           <div class="g_map_wrapper">
             <img src="images/map_flour.png" alt="" class="map_flour">
             <img src="images/map_herb.png" alt="" class="map_herb">
-            <!-- <img src="images/google_map_bg.png" alt="" class="google_map_bg img-responsive"> -->
+           
             <div id="google_map" style=""></div>
           </div>
         </div>
@@ -579,7 +250,8 @@
 
   <div class="bot1_wrapper">
     <div class="container">
-      <img src="images/footer.png" alt="" class="footer_img" style="display: none;">
+  
+      
 
       <div class="bot2_wrapper clearfix">
         <div class="social2_wrapper">
