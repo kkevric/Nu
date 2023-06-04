@@ -15,11 +15,62 @@
 
 
 /* Global properties ======================================================== */
-
-/* sta je ovo */
 a[href^="tel:"] {
   color: inherit;
   text-decoration: none;
+}
+::selection {
+  background: #e4cd7f !important;
+  color: #fff
+}
+
+::-moz-selection {
+  background: #e4cd7f !important;
+  color: #fff
+}
+
+a {
+  color: #e4cd7f;
+  text-decoration: underline;
+  outline: none
+}
+
+a:hover {
+  color: #e4cd7f;
+  text-decoration: none;
+  outline: none
+}
+
+body {
+  background: url(../images/bg1_1.jpg) center center no-repeat #1a1a1a;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 0;
+  font: 16px 'Bitter', Arial, Helvetica, sans-serif;
+  color: #dbdbdb;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+
+.container {
+  position: relative;
+  min-width: 320px;
+}
+
+#main {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Page Animated item Styles */
+.animated {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 /* Modal ======================================================== */
@@ -48,6 +99,8 @@ a[href^="tel:"] {
   max-height: 80vh;
 }
 
+
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   font-size: 30px;
@@ -62,7 +115,7 @@ a[href^="tel:"] {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content, #caption, #gallery {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -73,7 +126,7 @@ a[href^="tel:"] {
 }
 
 /* The Close Button */
-.close {
+.close, .closeGallery {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -84,7 +137,9 @@ a[href^="tel:"] {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.closeGallery:hover,
+.closeGallery:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -125,7 +180,7 @@ body {
   min-width: 320px;
 }
 
-.container-2 {
+.containerContact {
   position: relative;
   min-width: 320px;
   padding-left: 50px;
@@ -232,6 +287,15 @@ header img {
   top: 0; /*z-index: 99;*/
   min-width: 320px;
 }
+#top2-sticky-wrapper {
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.sticky-wrapper.is-sticky .navbar-nav a {
+  color: #fff !important;
+}
 
 
 #top2 {
@@ -280,6 +344,25 @@ header img {
 }
 
 
+#pizza {
+  position: relative;
+  padding-bottom: 170px;
+}
+
+.pizza1_wrapper {
+  position: relative;
+}
+
+
+
+
+.pizza1 {
+  position: absolute;
+  top: -120px;
+  display: block;
+  height: auto;
+}
+
 
 
 .pizza1_wrapper {
@@ -291,22 +374,187 @@ header img {
 
 
 /* ============================= online ====================== */
+#online .carousel-box {
+  position: relative;
+}
 
+#online .carousel-box .inner {
+  position: relative;
+  overflow: hidden;
+  max-width: none;
+  margin: 0;
+}
+
+#online .carousel-box ul li {
+  float: left;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  padding-right: 30px
+}
+
+#online .carousel.main {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-right: -30px;
+}
+
+#online .caroufredsel_wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+#online .caroufredsel_wrapper ul {
+  padding: 0;
+  margin: 0;
+}
 
 /* ============================= online end ====================== */
 /* nema */
+
+
+
+
+/* ============================= gallery ====================== */
+#gallery_inner {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery_prev {
+  vertical-align: top;
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background: url(../images/prev3.png) left top no-repeat;
+}
+
+.gallery_prev:hover {
+  background-position: bottom;
+}
+
+
+.gallery_next {
+  vertical-align: top;
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background: url(../images/next3.png) left top no-repeat;
+}
+.gallery_next:hover {
+  background-position: bottom;
+}
+
+
 #gallery {
   position: relative;
   padding-bottom: 50px;
   font-family: 'HandelGothicD';
 }
 
+.gallery-title {
+  font-family: 'HandelGothicD';
+  font-size: 36px;
+  line-height: 1.1;
+}
 
 
-/* ============================= gallery ====================== */
+
+#gallery_inner .carousel-box {
+  position: relative;
+}
+
+#gallery_inner .carousel-box .inner {
+  position: relative;
+  overflow: hidden;
+  max-width: none;
+  margin: 0;
+}
 
 
 
+.gallery_controls {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.gallery_pagination {
+  display: inline-block;
+  line-height: 23px;
+  vertical-align: top;
+}
+
+.gallery_pagination a {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 0 13px;
+  position: relative;
+}
+
+.gallery_pagination a:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 26px;
+  height: 1px;
+  background: #848484;
+  right: 100%;
+  top: 50%;
+}
+
+.gallery_pagination a:first-child:before {
+  display: none;
+}
+
+.gallery_pagination a span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  text-indent: -9999%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: url(../images/pag1.png) left top no-repeat;
+}
+
+.gallery_pagination a:hover span, .gallery_pagination a.selected span {
+  background: url(../images/pag2.png) left top no-repeat;
+}
+
+#gallery_inner .carousel.main {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-right: -30px;
+}
+
+#gallery_inner .caroufredsel_wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+#gallery_inner .caroufredsel_wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+
+#gallery_inner .carousel-box ul li {
+  float: left;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  padding-right: 30px
+}
 
 
 
@@ -441,6 +689,12 @@ header img {
   left: 0;
   top: 0;
   margin-top: 0;
+}
+
+.bree {
+  top: 100px;
+  left: 50%;
+  margin-left: -850px;
 }
 
 
@@ -710,6 +964,11 @@ h2 {
   height: auto;
 }
 
+.img-responsive {
+  width: auto \9;
+}
+
+
 
 /* nema */
 .border-box {
@@ -924,6 +1183,139 @@ h2 {
   margin-top: 100px;
 
 }
+
+.thumb1 {
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.thumb1.last {
+  margin-bottom: 0px;
+}
+
+.thumb1 .thumbnail {
+  padding: 0;
+  border: none;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  box-shadow: none;
+  moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin-bottom: 0;
+  background: none;
+}
+
+.thumb1 a {
+  display: block;
+  text-decoration: none;
+}
+
+.thumb1 a figure {
+  margin: 0;
+  float: none;
+  margin: 0px 0px 0px 0px;
+  background: #151515;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb1 a figure img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.thumb1 a:hover figure img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.thumb1 a figure .zoom_left {
+  display: block;
+  width: 69px;
+  height: 20px;
+  background: url(../images/zoom_left.png) 0 0 no-repeat;
+  position: absolute;
+  left: 25%;
+  margin-left: -120px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.thumb1 a:hover figure .zoom_left {
+  left: 50%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.thumb1 a figure .zoom_text {
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: 'Bitter';
+  font-style: italic;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+}
+
+.thumb1 a:hover figure .zoom_text {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.thumb1 a figure .zoom_right {
+  display: block;
+  width: 69px;
+  height: 20px;
+  background: url(../images/zoom_right.png) 0 0 no-repeat;
+  position: absolute;
+  right: 25%;
+  margin-right: -120px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.thumb1 a:hover figure .zoom_right {
+  right: 50%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
 
 
 /*================= Contacts =========================*/
