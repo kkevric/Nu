@@ -1,44 +1,43 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
-@import url('/fonts/Handel_Gothic_D_Regular.ttf');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,400i,700");
+@import url("/fonts/Handel_Gothic_D_Regular.ttf");
 
 @font-face {
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
   font-display: swap;
-  src: url('/fonts/Handel_Gothic_D_Regular.ttf'),
-  url('/fonts/Handel_Gothic_D_Regular.woff'),
-  url('/fonts/Handel_Gothic_D_Regular.woff2');
+  src: url("/fonts/Handel_Gothic_D_Regular.ttf"),
+    url("/fonts/Handel_Gothic_D_Regular.woff"),
+    url("/fonts/Handel_Gothic_D_Regular.woff2");
 }
-
-
 
 /* Global properties ======================================================== */
 a[href^="tel:"] {
   color: inherit;
   text-decoration: none;
 }
+
 ::selection {
   background: #e4cd7f !important;
-  color: #fff
+  color: #fff;
 }
 
 ::-moz-selection {
   background: #e4cd7f !important;
-  color: #fff
+  color: #fff;
 }
 
 a {
   color: #e4cd7f;
   text-decoration: underline;
-  outline: none
+  outline: none;
 }
 
 a:hover {
   color: #e4cd7f;
   text-decoration: none;
-  outline: none
+  outline: none;
 }
 
 body {
@@ -46,12 +45,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   border: 0;
-  font: 16px 'Bitter', Arial, Helvetica, sans-serif;
+  font: 16px "Bitter", Arial, Helvetica, sans-serif;
   color: #dbdbdb;
   line-height: 1.5;
   min-width: 320px;
 }
-
 
 .container {
   position: relative;
@@ -86,8 +84,8 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -99,7 +97,19 @@ body {
   max-height: 80vh;
 }
 
+.icons {
+  width: 8vw;
+  min-width: 100px;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+}
 
+.text-delivery {
+  font-size: 25px;
+  padding-bottom: 30px;
+  line-height: 1.1;
+}
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
@@ -115,18 +125,26 @@ body {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption, #gallery {
+.modal-content,
+#caption,
+#gallery {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
-.close, .closeGallery {
+.closeMenu,
+.closeGallery,
+.closeDelivery {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -136,17 +154,19 @@ body {
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus,
+.closeMenu:hover,
+.closeMenu:focus,
 .closeGallery:hover,
-.closeGallery:focus {
+.closeGallery:focus,
+.closeDelivery:hover,
+.closeDelivery:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .modal-content {
     width: 100%;
   }
@@ -155,13 +175,13 @@ body {
 a {
   color: #e4cd7f;
   text-decoration: underline;
-  outline: none
+  outline: none;
 }
 
 a:hover {
   color: #e4cd7f;
   text-decoration: none;
-  outline: none
+  outline: none;
 }
 
 body {
@@ -169,7 +189,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   border: 0;
-  font: 16px 'Bitter', Arial, Helvetica, sans-serif;
+  font: 16px "Bitter", Arial, Helvetica, sans-serif;
   color: #dbdbdb;
   line-height: 1.5;
   min-width: 320px;
@@ -196,14 +216,12 @@ body {
 
 /* Page Animated item Styles */
 
-
 /* ============================= header ====================== */
 #top0 {
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   filter: brightness(2);
-
 }
 
 #top00 {
@@ -214,7 +232,6 @@ body {
   width: 100%;
   height: auto;
 }
-
 
 header {
   position: relative;
@@ -287,16 +304,17 @@ header img {
   top: 0; /*z-index: 99;*/
   min-width: 320px;
 }
+
 #top2-sticky-wrapper {
   transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
 }
+
 .sticky-wrapper.is-sticky .navbar-nav a {
   color: #fff !important;
 }
-
 
 #top2 {
   position: relative;
@@ -318,11 +336,9 @@ header img {
   -webkit-box-shadow: 0 1px #424242;
 }
 
-
 .top2 {
   position: relative;
-} 
-
+}
 
 /* ============================= content ====================== */
 
@@ -337,12 +353,9 @@ header img {
   margin-bottom: -30px;
 }
 
-
-
 #home {
   position: relative;
 }
-
 
 #pizza {
   position: relative;
@@ -353,9 +366,6 @@ header img {
   position: relative;
 }
 
-
-
-
 .pizza1 {
   position: absolute;
   top: -120px;
@@ -363,15 +373,9 @@ header img {
   height: auto;
 }
 
-
-
 .pizza1_wrapper {
   position: relative;
 }
-
-
-
-
 
 /* ============================= online ====================== */
 #online .carousel-box {
@@ -392,7 +396,7 @@ header img {
   position: relative;
   width: 300px;
   overflow: hidden;
-  padding-right: 30px
+  padding-right: 30px;
 }
 
 #online .carousel.main {
@@ -414,10 +418,6 @@ header img {
 }
 
 /* ============================= online end ====================== */
-/* nema */
-
-
-
 
 /* ============================= gallery ====================== */
 #gallery_inner {
@@ -438,7 +438,6 @@ header img {
   background-position: bottom;
 }
 
-
 .gallery_next {
   vertical-align: top;
   display: inline-block;
@@ -446,24 +445,22 @@ header img {
   height: 20px;
   background: url(../images/next3.png) left top no-repeat;
 }
+
 .gallery_next:hover {
   background-position: bottom;
 }
 
-
 #gallery {
   position: relative;
   padding-bottom: 50px;
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
 }
 
 .gallery-title {
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
   font-size: 36px;
   line-height: 1.1;
 }
-
-
 
 #gallery_inner .carousel-box {
   position: relative;
@@ -475,8 +472,6 @@ header img {
   max-width: none;
   margin: 0;
 }
-
-
 
 .gallery_controls {
   text-align: center;
@@ -499,7 +494,7 @@ header img {
 
 .gallery_pagination a:before {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 26px;
   height: 1px;
@@ -524,7 +519,8 @@ header img {
   background: url(../images/pag1.png) left top no-repeat;
 }
 
-.gallery_pagination a:hover span, .gallery_pagination a.selected span {
+.gallery_pagination a:hover span,
+.gallery_pagination a.selected span {
   background: url(../images/pag2.png) left top no-repeat;
 }
 
@@ -553,10 +549,8 @@ header img {
   position: relative;
   width: 300px;
   overflow: hidden;
-  padding-right: 30px
+  padding-right: 30px;
 }
-
-
 
 /* ============================= gallery end ====================== */
 
@@ -567,6 +561,7 @@ header img {
 
 .g_map_wrapper {
   position: relative;
+  margin: auto;
 }
 
 .map_flour {
@@ -583,7 +578,6 @@ header img {
   z-index: -1;
 }
 
-
 #google_map {
   position: absolute !important;
   left: 42px;
@@ -598,9 +592,7 @@ header img {
   border-radius: 5px;
 }
 
-
 /* ============================= footer ====================== */
-
 .bot1_wrapper {
   background: url(../images/bg2.jpg) center center no-repeat #ebebeb;
   background-attachment: fixed;
@@ -612,13 +604,9 @@ header img {
   display: flex;
 }
 
-
-
-
-
-
 .logo2_wrapper {
   padding-bottom: 20px;
+  padding-top: 20px;
   text-align: center;
   flex: 1;
 }
@@ -631,8 +619,6 @@ header img {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .copyright {
   padding-top: 10px;
@@ -681,9 +667,7 @@ header img {
   transform: scale(1.2);
 }
 
-
 /* ============================= newparallax ====================== */
-
 .newparallax {
   position: absolute;
   left: 0;
@@ -696,8 +680,6 @@ header img {
   left: 50%;
   margin-left: -850px;
 }
-
-
 
 /* ============================= main menu ====================== */
 .navbar_ {
@@ -726,7 +708,8 @@ header img {
   margin-right: 0px;
 }
 
-.navbar_ .navbar-toggle:hover, .navbar_ .navbar-toggle:focus {
+.navbar_ .navbar-toggle:hover,
+.navbar_ .navbar-toggle:focus {
   background: #ffc600;
 }
 
@@ -761,7 +744,7 @@ header img {
 }
 
 .navbar_ .nav > li:before {
-  content: '';
+  content: "";
   display: block;
   width: 19px;
   height: 13px;
@@ -804,8 +787,6 @@ header img {
   letter-spacing: 2px;
 }
 
-
-
 .navbar_ .nav > li > a:focus {
   color: #fff;
   text-decoration: none;
@@ -846,11 +827,10 @@ header img {
   background: none;
 }
 
-
 /* ============================= main layout ====================== */
 /* nema */
 .title1 {
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
   font-size: 28px;
   line-height: 1.1;
   font-weight: 400;
@@ -862,7 +842,7 @@ header img {
 }
 
 .title2 {
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
   font-size: 36px;
   line-height: 1.1;
   font-weight: 400;
@@ -873,7 +853,7 @@ header img {
 }
 /* nema */
 .title3 {
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
   font-size: 64px;
   line-height: 1.1;
   font-weight: 400;
@@ -884,7 +864,7 @@ header img {
 }
 /* nema */
 .title4 {
-  font-family: 'HandelGothicD';
+  font-family: "HandelGothicD";
   font-size: 28px;
   line-height: 1.1;
   font-weight: 400;
@@ -896,7 +876,7 @@ header img {
 }
 /* nema */
 .title5 {
-  font-family: 'Lobster';
+  font-family: "Lobster";
   font-size: 36px;
   line-height: 1.1;
   font-weight: 400;
@@ -907,7 +887,7 @@ header img {
 }
 /* nema */
 .title6 {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 28px;
   line-height: 1.1;
   font-weight: 400;
@@ -919,7 +899,7 @@ header img {
 }
 /* nema */
 .title7 {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 64px;
   line-height: 1.1;
   font-weight: 400;
@@ -932,7 +912,7 @@ header img {
 /* nema */
 h1 {
   display: block;
-  font-family: 'Lobster';
+  font-family: "Lobster";
   font-weight: 400;
   font-size: 44px;
   color: #fff;
@@ -943,10 +923,10 @@ h1 {
   min-height: 104px;
   text-align: center;
 }
-/* nema */
+
 h2 {
   display: block;
-  font-family: 'Lobster';
+  font-family: "Lobster";
   font-weight: 400;
   font-size: 64px;
   color: #fff;
@@ -968,18 +948,12 @@ h2 {
   width: auto \9;
 }
 
-
-
 /* nema */
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
-
-
 
 .white {
   color: #fff;
@@ -1002,7 +976,7 @@ h2 {
   background: url(../images/li_st1.png) 0 5px no-repeat;
   text-decoration: none;
   color: #303031;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   font-style: italic;
   font-size: 16px;
   text-decoration: underline;
@@ -1013,10 +987,9 @@ h2 {
   color: #b85e46;
 }
 
-
 /*-----btn-----*/
 .btn-default.btn1 {
-  font-family: 'Bitter';
+  font-family: "Bitter";
   display: inline-block;
   width: 195px;
   height: 60px;
@@ -1063,7 +1036,7 @@ h2 {
 }
 
 .btn-default.btn2 {
-  font-family: 'Bitter';
+  font-family: "Bitter";
   display: inline-block;
   width: 285px;
   height: 60px;
@@ -1118,12 +1091,9 @@ h2 {
   background-position: -30px center;
 }
 
-
 /* ============================= thumbnail ====================== */
-
-
 .btn-default.btn3 {
-  font-family: 'Bitter';
+  font-family: "Bitter";
   display: inline-block;
   width: 85px;
   height: 60px;
@@ -1161,7 +1131,6 @@ h2 {
 }
 
 .btn-default.btn3:hover {
-
   display: inline-block;
 
   background: url(../images/btn3_hover.png) 0 0 no-repeat;
@@ -1177,11 +1146,8 @@ h2 {
   padding: 0 15%;
 }
 
-
 .margin {
-
   margin-top: 100px;
-
 }
 
 .thumb1 {
@@ -1269,7 +1235,7 @@ h2 {
   width: 100%;
   font-size: 20px;
   line-height: 20px;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   font-style: italic;
   color: #fff;
   transition: all 0.3s ease-out;
@@ -1314,9 +1280,6 @@ h2 {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-
-
-
 
 /*================= Contacts =========================*/
 #note {
@@ -1398,7 +1361,7 @@ h2 {
   background-color: transparent !important;
   position: relative;
   color: #ffc600;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   font-size: 16px;
   font-weight: 400;
   padding: 4px 0 0 4px;
@@ -1451,19 +1414,13 @@ h2 {
   box-shadow: none;
 }
 
-
 /*----- media queries ------*/
 /* Large desktop */
 @media (min-width: 1330px) {
-
-
 }
 
 /* Default landscape and desktop to large desktop */
 @media (max-width: 1329px) {
-
- 
-
   #google_map {
     left: 33px;
     top: 33px;
@@ -1481,18 +1438,13 @@ h2 {
 }
 
 @media (min-width: 992px) {
-
-
 }
 
 @media (min-width: 992px) and (max-width: 1329px) {
-
-
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 991px) {
-
   h1 {
     background-size: 700px auto;
     padding-top: 8px;
@@ -1514,11 +1466,9 @@ h2 {
   .newparallax {
     display: none;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
   .navbar_ .nav > li > a {
     font-size: 18px;
   }
@@ -1530,18 +1480,33 @@ h2 {
   .navbar_ .nav > li:before {
     left: -33px;
   }
-
-
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-
   .social_wrapper {
     position: relative;
     right: auto;
     top: auto;
     margin-top: 15px;
+    text-align: center;
+  }
+
+  .logo_wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bot2_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons {
+    width: 70px;
+  }
+
+  .text-delivery {
     text-align: center;
   }
 
@@ -1555,8 +1520,6 @@ h2 {
     font-size: 24px;
     min-height: 0;
   }
-
-
 
   .online .online_inner {
     padding: 0 0;
@@ -1577,11 +1540,11 @@ h2 {
   }
 
   .social2_wrapper {
-
   }
 
   .copyright {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .header_img {
@@ -1591,7 +1554,6 @@ h2 {
   #header_wrapper {
     margin-bottom: 0;
   }
-
 
   .navbar_ {
     float: none;
@@ -1616,7 +1578,7 @@ h2 {
     border-right: none;
     background: #000;
     border: none;
-    padding: 0 0px
+    padding: 0 0px;
   }
 
   .navbar_ .nav > li {
@@ -1634,10 +1596,11 @@ h2 {
     padding: 2px 13px;
   }
 
-  .navbar_ .nav > li > a:hover, .navbar_ .nav > li > a:focus, .navbar_ .nav > li.sfHover > a, .navbar_ .nav > li.sfHover > a:hover {
+  .navbar_ .nav > li > a:hover,
+  .navbar_ .nav > li > a:focus,
+  .navbar_ .nav > li.sfHover > a,
+  .navbar_ .nav > li.sfHover > a:hover {
   }
-
-
 }
 
 .bootstrap-touchspin-up i {
@@ -1648,14 +1611,9 @@ h2 {
   padding-bottom: 50px;
 }
 
-
 @media (min-width: 481px) and (max-width: 767px) {
-
-
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-
 }

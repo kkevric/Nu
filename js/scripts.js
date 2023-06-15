@@ -109,7 +109,7 @@ $(document).ready(function() {
   $(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
   function updateSizes_vat(){
     $('#online .carousel.main ul').trigger("updateSizes");
-    $('#gallery_inner .carousel.main ul').trigger("updateSizes");
+    
 
 
 
@@ -240,8 +240,6 @@ $(window).load(function() {
     directionNav: true
   });
 
-
-
 });
 
 // Get the menu modal
@@ -252,8 +250,7 @@ cjenik.onclick = function(){
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks on <span> (x), close the modal
+var span = document.getElementsByClassName("closeMenu")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
@@ -263,11 +260,23 @@ var galleryModal = document.getElementById("galleryModal");
 var galerija = document.getElementById("galerija");
 galerija.onclick = function(){
   galleryModal.style.display = "block";
+  $('#gallery_inner .carousel.main ul').trigger("updateSizes");
 }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("closeGallery")[0];
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   galleryModal.style.display = "none";
+}
+
+// Get the delivery modal
+var deliveryModal = document.getElementById("deliveryModal");
+var dostava = document.getElementById("dostava");
+dostava.onclick = function(){
+  deliveryModal.style.display = "block";
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeDelivery")[0];
+span.onclick = function() {
+  deliveryModal.style.display = "none";
 }
