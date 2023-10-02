@@ -168,17 +168,17 @@ $(document).ready(function() {
   });
 
 
-    $('input[data-plugin="TouchSpin"]').TouchSpin({
-        min: 0,
-        max: 100,
-        step: 1,
-        decimals: 0,
-        boostat: 5,
-        maxboostedstep: 10,
-        verticalbuttons: true,
-        verticalupclass: 'fa fa-plus',
-        verticaldownclass: 'fa fa-minus'
-    });
+    // $('input[data-plugin="TouchSpin"]').TouchSpin({
+    //     min: 0,
+    //     max: 100,
+    //     step: 1,
+    //     decimals: 0,
+    //     boostat: 5,
+    //     maxboostedstep: 10,
+    //     verticalbuttons: true,
+    //     verticalupclass: 'fa fa-plus',
+    //     verticaldownclass: 'fa fa-minus'
+    // });
 
   /*----------------------------------------------------*/
   // Appear

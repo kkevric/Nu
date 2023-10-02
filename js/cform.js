@@ -3,7 +3,7 @@ $(document).ready(function(){
 		var str = $(this).serialize(); 
 		$.ajax( { type: "POST", url: "contact.php", data: str, success: function(msg){ 
 				if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
-					{ result = '<div class="notification_ok">Your message has been sent. Thank you!<br> <a href="#" onclick="freset();return false;">send another mail</a></div>'; $("#fields").hide(); } 							
+					{ result = '<div class="notification_ok">Vaša poruka je poslana. Hvala!<br> <a href="#" onclick="freset();return false;">Pošalji novi mail</a></div>'; $("#fields").hide(); } 							
 				else
 					{ result = msg; } 
 				$("#note").html(result); 
